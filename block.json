@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "fl-learn-more/blocks",
+  "title": "FL Learn More",
+  "category": "widgets",
+  "description": "3 columns section with short descriptions and links",
+  "icon": "layout",
+  "keywords": [ "columns", "learn", "more", "blocks" ],
+  "version": "1.0",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./assets/style.css",
+  "style": "file:./assets/front.css",
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "selector": ".wp-block-fl-learn-more-blocks .title",
+      "source": "text"
+    },
+    "blocks": {
+      "type": "array",
+      "selector": ".wp-block-fl-learn-more-blocks .blocks"
+    }
+  }
+}
